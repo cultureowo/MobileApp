@@ -24,6 +24,8 @@
 
         <activity android:name=".GameActivity" android:exported="false"/>
         <activity android:name=".EndGameActivity" android:exported="false"/>
+        <activity android:name=".StatsActivity"></activity>
+
 
     </application>
 

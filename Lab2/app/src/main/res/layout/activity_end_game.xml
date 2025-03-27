@@ -25,6 +25,15 @@
         android:backgroundTint="@android:color/holo_blue_dark" />
 
     <Button
+        android:id="@+id/statsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Переглянути статистику"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/holo_green_dark"/>
+
+
+    <Button
         android:id="@+id/exitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

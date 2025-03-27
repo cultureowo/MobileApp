@@ -31,6 +31,16 @@ public class EndGameActivity extends AppCompatActivity {
             finish();
         });
 
+        GameStatsDatabaseHelper dbHelper = new GameStatsDatabaseHelper(this);
+        dbHelper.insertGameStats(score);
+
+        Button statsButton = findViewById(R.id.statsButton);
+        statsButton.setOnClickListener(v -> {
+            Intent intent = new Intent(EndGameActivity.this, StatsActivity.class);
+            startActivity(intent);
+        });
+
+
 
         exitButton.setOnClickListener(v -> finishAffinity());
     }
